@@ -30,14 +30,58 @@
   // < 50 F
 
   it('เมื่อเรียก function calculateGrade ด้วย 90 ควรจะมีค่าเป็น A', () => {
-    // arrange or given
     const point = 90
     const expected = 'A'
-
-    // act or when
     const result = gradeApp.calculateGrade(point);
-
-    // assert or then
     assert(result === expected)
   });
+
+  it('เมื่อเรียก function calculateGrade ด้วย 80 ควรจะมีค่าเป็น A', () => {
+    const point = 80
+    const expected = 'A'
+    const result = gradeApp.calculateGrade(point);
+    assert(result === expected)
+  });
+
+it('เมื่อเรียก function calculateGrade ด้วย 79 ควรจะมีค่าเป็น B', () => {
+  const point = 79
+  const expected = 'B'
+  const result = gradeApp.calculateGrade(point);
+  assert(result === expected)
+});
+
+it('เมื่อเรียก function calculateGrade ด้วย 69 ควรจะมีค่าเป็น B', () => {
+  const point = 75
+  const expected = 'B'
+  const result = gradeApp.calculateGrade(point);
+  assert(result === expected)
+});
+
+it('เมื่อเรียก function calculateGrade ด้วย 69 ควรจะมีค่าเป็น C', () => {
+  const point = 69
+  const expected = 'C'
+  const result = gradeApp.calculateGrade(point);
+  assert(result === expected)
+});
+
+it('เมื่อเรียก function calculateGrade ด้วย 60 ควรจะมีค่าเป็น C', () => {
+  const point = 60
+  const expected = 'C'
+  const result = gradeApp.calculateGrade(point);
+  assert(result === expected)
+});
+
+it('เมื่อเรียก function calculateGrade ด้วย 59 ควรจะมีค่าเป็น D', () => {
+  const point = 59
+  const expected = 'D'
+  const result = gradeApp.calculateGrade(point);
+  assert(result === expected)
+});
+
+it('เมื่อเรียก function calculateGrade ด้วย 49 ควรจะมีค่าเป็น F', () => {
+  const point = 49
+  const expected = 'F'
+  const result = gradeApp.calculateGrade(point);
+  assert(result === expected)
+});
 })();
