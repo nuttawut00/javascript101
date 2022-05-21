@@ -4,5 +4,5 @@ function calculateGrade(point) {
 
 }
 
-taeApp.gradeApp = calculateGrade
+gradeApp.calculateGrade = calculateGrade
 

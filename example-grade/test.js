@@ -35,7 +35,7 @@
     const expected = 'A'
 
     // act or when
-    const result = taeApp.calculateGrade(point);
+    const result = gradeApp.calculateGrade(point);
 
     // assert or then
     assert(result === expected)
